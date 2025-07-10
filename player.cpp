@@ -212,7 +212,7 @@ void mage::usaMagia(player& nemico) {
         mana -= 10;
         int dannoMagia = 40 + (armaEquipaggiata.bonusMagia * livello);
         nemico.vita -= dannoMagia;
-        cout << "Hai usato la palla di fuoco, -20 mana e hai inflitto: " << dannoMagia << " danni" << endl;
+        cout << "Hai usato la palla di fuoco, -10 mana e hai inflitto: " << dannoMagia << " danni" << endl;
     } else {
         cout << "Non hai abbastanza mana" << endl;
     }
