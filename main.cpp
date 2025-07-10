@@ -148,6 +148,7 @@ int main(){
         caricasalvataggio(pwarrior, pmage);
         salvasalvataggio(pwarrior, pmage);
         salvainventario(inventario);
+        
     //debug
     cout << pwarrior.vita << " "<< pwarrior.difesa << " "  <<  pwarrior.livello << pwarrior.exp<<" " <<pwarrior.armaEquipaggiata.id<<" "<<pwarrior.armaturaEquipaggiata.id<<endl;
     cout << pmage.vita << " "<< pmage.difesa<<" "<< pmage.livello << pmage.exp<<" "<< pmage.armaEquipaggiata.id<<" "<< pmage.armaturaEquipaggiata.id <<endl;
@@ -158,8 +159,8 @@ int main(){
     pwarrior.puntiforza = pwarrior.maxPuntif();
     pmage.mana = pmage.maxMana();
     cout<<"pwarrior vita: "<<pwarrior.vita<<" pmage vita: "<<pmage.vita<<" pwarrior punti forza: "<<pwarrior.puntiforza <<" pmage mana: "<<pmage.mana<<endl;
-    combattiTuttiNemici(nemici, pwarrior, pmage, inventario);
     }
+    combattiTuttiNemici(nemici, pwarrior, pmage, inventario);
   /*  while ((pmage.isAlive() || pwarrior.isAlive()) && nemico.isAlive()) {
         if (pwarrior.isAlive()) turnoplayer(pwarrior, nemico);
         if (pmage.isAlive() && nemico.isAlive()) turnoplayer(pmage, nemico);
