@@ -1,6 +1,7 @@
 #include "combattimento.h"
+#include "turni.h"
 
-void combattiTuttiNemici(vector<nemico>& nemici, player& pwarrior, player& pmage, map<int, int>& inventario) {
+void combattiTuttiNemici(vector<nemico>& nemici, warrior& pwarrior, mage& pmage, map<int, int>& inventario) {
     for (auto& nemico : nemici) {
         if (!nemico.isAlive()) continue;
 
