@@ -2,9 +2,10 @@
 #include "turni.h"
 
 void combattiTuttiNemici(vector<nemico>& nemici, warrior& pwarrior, mage& pmage, map<int, int>& inventario) {
+int turno = 1;
     for (auto& nemico : nemici) {
         if (!nemico.isAlive()) continue;
-
+        cout << "===== TURNO " << turno++ << " =====";
         while ((pwarrior.isAlive() || pmage.isAlive()) && nemico.isAlive()) {
             if (pwarrior.isAlive())
                 turnoplayer(pwarrior, nemico, inventario, pwarrior, pmage);
